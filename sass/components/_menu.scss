@@ -1,0 +1,40 @@
+.component--menu {
+  @extend .prop-comp-menu;
+  padding: 0 0 23px 0;
+
+  .list-item {
+    cursor: pointer;
+
+    a {
+      font-family: $font-roboto-light;
+      color: $grey-menu-items;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $grey-menu-hover;
+
+      .item {
+        color: $white;
+      }
+
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    .orange-line {
+      background-color: $orange-point;
+      height: 39px;
+      width: 4px;
+    }
+
+    .item {
+      font-weight: lighter;
+      font-size: $font-size-14;
+      margin: 0;
+    }
+  }
+}

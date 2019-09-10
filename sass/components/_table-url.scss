@@ -1,0 +1,43 @@
+.component__table-url {
+  overflow-x: auto;
+
+  .links-table {
+    border-collapse: collapse;
+
+    .row-table {
+      height: 58px;
+      @extend .bottom-line;
+
+      &:hover {
+        background-color: $grey-back;
+
+        .third-column, .fourth-column {
+          svg {
+            @extend .visible;
+          }
+        }
+      }
+
+      .first-column {
+        padding-left: 16px;
+        font-weight: bold;
+      }
+
+      .second-column {
+        a {
+          color: $blue-user;
+          text-decoration: none;
+        }
+      }
+
+      .third-column, .fourth-column {
+        padding-right: 7px;
+        cursor: pointer;
+      }
+    }
+
+    .row-table:first-child {
+      border-top: 1px solid $grey-line;
+    }
+  }
+}

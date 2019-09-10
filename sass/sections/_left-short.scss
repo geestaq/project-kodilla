@@ -1,0 +1,44 @@
+.section__left-short {
+  @extend .prop-left-menu;
+  width: 54px;
+  @extend .shadow-menu;
+  z-index: 8;
+
+  .first {
+    height: 60px;
+
+    img:last-child {
+      cursor: pointer;
+    }
+  }
+
+  .second {
+    padding-top: 26px;
+
+    .status {
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    .cell {
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $online;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        left: 20px;
+        top: 0;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

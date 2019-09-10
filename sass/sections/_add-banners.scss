@@ -1,0 +1,36 @@
+.section__add-banners {
+  @extend .initial-properties;
+
+  .part-one {
+    @extend .part-one-init-props;
+
+    .box-next {
+      max-width: 335px;
+      width: 100%;
+
+      .input-middle {
+        @extend .prop-input-size;
+
+        select {
+          @extend .prop-roboto-light-14;
+          @extend .prop-select;
+          padding-left: 15px;
+          margin-right: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .part-two {
+    @extend .bottom-line;
+
+    &>div:first-child {
+      border-right: 1px solid $grey-line;
+    }
+  }
+
+  .part-three {
+    @extend .part-three-props;
+  }
+}

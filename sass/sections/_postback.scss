@@ -1,0 +1,132 @@
+.section__postback {
+  background-color: $white;
+  @extend .shadow-content;
+
+  .part-one {
+    font-family: $font-roboto-light;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: lighter;
+    @extend .bottom-line;
+    @extend .middle-position;
+
+    p {
+      margin: 19px 0 0;
+    }
+
+    h4 {
+      line-height: 17px;
+      margin: 4px 20px 20px 0;
+    }
+
+    .window-area {
+      max-width: 510px;
+      width: 100%;
+      height: 187px;
+      border: 1px solid $grey-line;
+      border-radius: 3px;
+      margin-bottom: 20px;
+
+      textarea {
+        margin: 20px 0 0 20px;
+        width: 100%;
+        max-width: 310px;
+        color: $grey-title;
+        border: none;
+        resize: none;
+        outline: none;
+      }
+    }
+
+    .window-select {
+      max-width: 328px;
+      width: 100%;
+      height: 40px;
+      border: 1px solid $grey-line;
+      border-radius: 3px;
+      margin-bottom: 39px;
+
+      select {
+        @extend .prop-select;
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+  }
+
+  .part-two {
+    @extend .bottom-line;
+    @extend .middle-position;
+    .box {
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+
+    .box:first-child {
+      border-right: 1px solid $grey-line;
+    }
+
+    .window-work {
+      height: 180px;
+      width: 100%;
+      padding: 0 12px;
+      overflow: scroll;
+
+      .checkbox-line {
+        height: 38px;
+        cursor: pointer;
+
+        h5 {
+          font-family: $font-roboto-light;
+          font-size: 14px;
+          font-weight: lighter;
+          margin: 0;
+        }
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        width: 96%;
+        height: 20px;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        margin-top: 8px;
+        //margin-right: -10px;
+        //margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 14px 0 14px 22px;
+        border-color: transparent transparent transparent $orange-icon;
+        transform: rotate(-90deg);
+        cursor: pointer;
+      }
+
+      .slider::-webkit-slider-runnable-track {
+        background-color: $grey-title;
+        height: 6px;
+      }
+    }
+
+    .box:last-child {
+      .window-work {
+        h4 {
+          font-weight: lighter;
+        }
+
+        h4:last-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  button {
+    margin-right: 23px;
+  }
+}

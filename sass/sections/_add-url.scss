@@ -1,0 +1,22 @@
+.section__add-url {
+  @extend .initial-properties;
+
+  .part-one {
+    @extend .part-one-init-props;
+  }
+
+  .part-two {
+    @extend .bottom-line;
+    padding: 0 18px;
+
+    &>div {
+      >div {
+        max-width: none;
+      }
+    }
+  }
+
+  .part-three {
+    @extend .part-three-props;
+  }
+}

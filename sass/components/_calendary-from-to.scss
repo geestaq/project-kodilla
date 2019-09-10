@@ -1,0 +1,48 @@
+.component--calendary {
+  height: 108px;
+  @extend .bottom-line;
+
+  .date-field {
+    position: relative;
+    height: 40px;
+    width: 325px;
+    border: 1px solid $grey-line;
+    border-radius: 3px;
+
+    .enter-date {
+      font-family: $font-roboto-light;
+      font-size: $font-size-14;
+      font-weight: lighter;
+      border: none;
+      width: 140px;
+      padding-left: 15px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .enter-date:nth-of-type(2) {
+      margin-right: 15px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $grey-line;
+      border: none;
+      width: 1px;
+      height: 28px;
+      left: 144px;
+      top: 7px;
+    }
+  }
+
+  .refresh {
+    width: 40px;
+    height: 40px;
+    background-color: $orange-point;
+    border-radius: 5px;
+    border: none;
+    margin-left: 14px;
+    cursor: pointer;
+  }
+}
